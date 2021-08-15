@@ -1,0 +1,274 @@
+:root {
+  --purple: #54008b;
+  --green: #00703c;
+  --gray: #848484;
+  --light-gray: #EBEBEB;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;   
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; 
+  background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.3), rgba(0, 0, 0, 0.4)), url(images/wimbledon-tennis-grass-court.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+} 
+
+body {
+  padding-bottom: 3rem;
+}  
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+/* header */
+
+.header {  
+  padding: 3rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;  
+}
+
+/* form */
+
+#survey-form {
+  background: rgba(255, 255, 255, 1);  
+  border-radius: 10px;
+  padding: 2rem;  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-label, legend {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--purple);
+  line-height: 1.5;
+}
+
+.form-field {
+  background: var(--light-gray);  
+  padding: 1rem;
+  font-size: 1rem;  
+  border: 0;    
+  border-radius: 5px;
+  color: #000;
+  width: 100%;
+  font-family: inherit;
+  display: block;  
+}
+
+.form-field::placeholder {
+  color: var(--gray);
+}
+
+fieldset {
+  margin-bottom: 1.5rem;
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* custom radio button and checkbox */
+
+.flex-container {
+  display: flex;   
+}
+
+.radio-wrap, .checkbox-wrap {
+  margin-right: 1.5rem;  
+  position: relative;   
+  display: flex;   
+}
+
+.radio-wrap label, .checkbox-wrap label {
+  font-size: 1rem;
+  margin-left: 1.625rem;   
+} 
+
+.radio-wrap input, .checkbox-wrap input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-wrap label::before, .checkbox-wrap label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: var(--light-gray);  
+  display: inline-block;
+}
+
+.radio-wrap label::before {
+  border-radius: 50%;
+}
+
+.radio-wrap input:checked + label::after {
+  content: "";
+  position: absolute;
+  display: inline-block;  
+  top: 5px;
+  left: 5px;
+  border: 5px solid var(--purple);
+  border-radius: 50%;
+}
+
+.checkbox-wrap input:checked + label::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 2px;
+  left: 6px;
+  width: 8px;
+  height: 12px;
+  border: solid var(--purple);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* FORM BUTTON */
+
+.form-button {
+  display: block;
+  margin: 3.75rem auto 1.75rem;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;  
+}
+
+/* FOCUS STATE */ 
+
+.form-field:focus, .radio-wrap input:focus + label::before, .checkbox-wrap input:focus + label::before {
+  outline: 2px solid var(--green);
+} 
+
+.form-button:focus {
+  outline: 2px solid #000; 
+}
+
+/* hover state */ 
+
+.form-button:hover {
+  transform: scale(1.05);
+  background: rgb(1, 87, 47);
+}
+
+/* media queries */ 
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    max-width: 90vw;
+  }  
+
+  .form-button:hover {
+    transform: scale(1);    
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    padding: 2rem 1.25rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  #survey-form {
+    padding: 1.25rem;
+  }  
+  
+  .form-label, legend {    
+    font-size: 1rem;    
+  }
+  
+  .form-field {    
+    padding: 0.875rem;    
+  }
+
+  .form-button {    
+    margin: 3rem auto 1.75rem;   
+    font-size: 1.125rem; 
+    width: 100%;    
+  } 
+  
+  body::before {
+    background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.3), rgba(0, 0, 0, 0.8)), url(images/wimbledon-tennis-grass-court.jpg); 
+  }
+}
+
+@media (max-width: 500px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .radio-wrap, .checkbox-wrap {
+    margin-right: 0;     
+  }
+
+  .radio-wrap:not(:last-child), .checkbox-wrap:not(:last-child) {
+    margin-bottom: 1rem;
+  }  
+}

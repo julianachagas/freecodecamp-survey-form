@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Survey Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <h1 id="title" class="title">Tennis Audience Survey Form</h1>
+      <p id="description" class="description">We’d love to learn more about our fellow tennis fans.</p>
+      <p class="description">Please take a moment to complete our survey. Thank you!</p>      
+    </div>
+    <form action="#" method="POST" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label" class="form-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required class="form-field">
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label" class="form-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="youremail@email.com" required class="form-field"> 
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label" class="form-label">Age <span class="input-comment">(optional)</span></label>
+        <input type="number" name="age" id="number" placeholder="30" max="100" min="12" class="form-field">
+      </div>
+      <fieldset>
+        <legend>What’s your favorite Grand Slam?</legend>
+        <select name="selection-group1" id="dropdown" class="form-field">
+          <option value="" disabled selected>Select your favorite</option>
+          <option value="australianopen">Australian Open</option>
+          <option value="rolandgarros">Roland Garros</option>
+          <option value="wimbledon">Wimbledon</option>
+          <option value="usopen">US Open</option>
+        </select>
+      </fieldset>
+      <fieldset class="flex-container">
+        <legend>Do you play tennis?</legend>
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group1" id="radio-group1-option1" value="yes" checked>
+          <label for="radio-group1-option1">Yes</label>
+        </div> 
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group1" id="radio-group1-option2" value="no">
+          <label for="radio-group1-option2">No</label>
+        </div>       
+      </fieldset>
+      <fieldset class="flex-container">
+        <legend>Have you ever attended a tennis tournament?</legend>
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group2" id="radio-group2-option1" value="yes" checked>
+          <label for="radio-group2-option1">Yes</label>
+        </div> 
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group2" id="radio-group2-option2" value="no">
+          <label for="radio-group2-option2">No</label>
+        </div>       
+      </fieldset>
+      <fieldset class="flex-container">
+        <legend>On average, how many tennis tournaments do you attend each year?</legend>
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group3" id="radio-group3-option1" value="0-1" checked>
+          <label for="radio-group3-option1">0 - 1</label>
+        </div> 
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group3" id="radio-group3-option2" value="2-3">
+          <label for="radio-group3-option2">2 - 3</label>
+        </div> 
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group3" id="radio-group3-option3" value="4-more" >
+          <label for="radio-group3-option3">4 or more</label>
+        </div>      
+      </fieldset>
+      <fieldset class="flex-container">
+        <legend>Where do you usually watch tennis? <span class="input-comment">(check all that apply)</span></legend>
+        <div class="checkbox-wrap">
+          <input type="checkbox" name="checkbox-group1-option1" id="checkbox-group1-option1" value="tv" checked>
+          <label for="checkbox-group1-option1">TV</label>
+        </div>
+        <div class="checkbox-wrap">
+          <input type="checkbox" name="checkbox-group1-option2" id="checkbox-group1-option2" value="phone">
+          <label for="checkbox-group1-option2">Phone</label>
+        </div>
+        <div class="checkbox-wrap">
+          <input type="checkbox" name="checkbox-group1-option3" id="checkbox-group1-option3" value="tablet">
+          <label for="checkbox-group1-option3">Tablet</label>
+        </div>
+        <div class="checkbox-wrap">
+          <input type="checkbox" name="checkbox-group1-option4" id="checkbox-group1-option4" value="computer">
+          <label for="checkbox-group1-option4">Computer</label>
+        </div>                     
+      </fieldset>
+      <fieldset class="flex-container">
+        <legend>Which games do you follow the most?</legend>
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group4" id="radio-group4-option1" value="men" checked>
+          <label for="radio-group4-option1">Men</label>
+        </div> 
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group4" id="radio-group4-option2" value="women">
+          <label for="radio-group4-option2">Women</label>
+        </div> 
+        <div class="radio-wrap">
+          <input type="radio" name="radio-group4" id="radio-group4-option3" value="both" >
+          <label for="radio-group4-option3">Both</label>
+        </div>      
+      </fieldset>
+      <fieldset>
+        <legend>Which social media do you use the most to get tennis news?</legend>
+        <input type="text" name="social-media" id="social-media" list="social-media-list" placeholder="Ex: Instagram" class="form-field">
+        <datalist id="social-media-list">
+          <option value="Instagram"></option>
+          <option value="Facebook"></option>
+          <option value="Twitter"></option>
+          <option value="Whatsapp"></option>
+        </datalist>
+      </fieldset>
+      <div class="form-group">
+        <label for="favorite-player" class="form-label">Who’s your favorite tennis player and why?</label>
+        <textarea name="favorite-player" id="favorite-player" rows="7" placeholder="Write your answer here" class="form-field"></textarea>
+      </div>  
+      <button type="submit" class="form-button" id="submit">Submit</button>
+    </form>
+  </main>  
+</body>
+</html>
