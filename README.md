@@ -15,7 +15,7 @@
 ## What I learned 
 
 <p> - Custom radio button and checkbox with CSS using label::before and label::after.</p>
-<img src="screenshots/code-custom-radio-checkbox.png" alt=""/> <br/><br/>
+<img src="screenshots/code-custom-radio-checkbox.png" alt=""/> <br/>
 <p> - CSS property background-attachment: fixed doesn't work well on mobile. This is the mobile friendly alternative:</p>
 <img src="screenshots/code-body-before.png" alt=""/>
 
