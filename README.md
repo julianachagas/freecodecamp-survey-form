@@ -14,7 +14,7 @@ Project created for the Responsive Web Design Certification from <a href="https:
 
 ## What I learned 
 
-- Custom radio button and checkbox with CSS using `label::before` and `label::after.`
+- Custom radio button and checkbox with CSS using `label::before` and `label::after`
 
 ```css
 .radio-wrap input, .checkbox-wrap input {
@@ -63,7 +63,7 @@ Project created for the Responsive Web Design Certification from <a href="https:
 ```
 <br/>
 
-- CSS property background-attachment: fixed doesn't work well on mobile. This is the mobile friendly alternative:
+- CSS property `background-attachment: fixed` doesn't work well on mobile. This is the mobile friendly alternative:
 
 ```css
 body::before {
