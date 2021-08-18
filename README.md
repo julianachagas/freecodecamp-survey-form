@@ -82,4 +82,4 @@ body::before {
 }
 ```
 ***
-##### by Juliana Chagas 💜
+##### Made with 💜 by Juliana Chagas 
