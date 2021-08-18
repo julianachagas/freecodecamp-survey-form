@@ -1,6 +1,6 @@
 # FreeCodeCamp - Survey Form
 
-<p>Project created for the Responsive Web Design Certification from <a href="https://www.freecodecamp.org/learn">freeCodeCamp</a>.</p> 
+Project created for the Responsive Web Design Certification from <a href="https://www.freecodecamp.org/learn">freeCodeCamp</a>.
 
 ## Layout
 
@@ -14,7 +14,7 @@
 
 ## What I learned 
 
-<p> - Custom radio button and checkbox with CSS using label::before and label::after.</p>
+- Custom radio button and checkbox with CSS using `label::before` and `label::after.`
 
 ```css
 .radio-wrap input, .checkbox-wrap input {
@@ -62,7 +62,8 @@
 }
 ```
 <br/>
-<p> - CSS property background-attachment: fixed doesn't work well on mobile. This is the mobile friendly alternative:</p>
+
+- CSS property background-attachment: fixed doesn't work well on mobile. This is the mobile friendly alternative:
 
 ```css
 body::before {
@@ -73,12 +74,12 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1; 
-  background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.3), rgba(0, 0, 0, 0.4)), url(images/wimbledon-tennis-grass-court.jpg);
+  background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.3), rgba(0, 0, 0, 0.4)), 
+                    url(images/wimbledon-tennis-grass-court.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;  
 }
 ```
-
 ***
 ##### by Juliana Chagas 💜
