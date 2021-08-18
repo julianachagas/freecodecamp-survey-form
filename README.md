@@ -14,7 +14,7 @@ Project created for the Responsive Web Design Certification from <a href="https:
 
 ### Mobile 📱
 
-<img src="screenshots/mobile1.png" alt="" width="270"/>  <img src="screenshots/mobile2.png" alt="" width="270"/> <img src="screenshots/mobile3.png" alt="" width="270"/> <br/><br/>
+<img src="screenshots/mobile1.png" alt="" width="250"/> &nbsp; &nbsp; <img src="screenshots/mobile2.png" alt="" width="250"/> &nbsp; &nbsp; <img src="screenshots/mobile3.png" alt="" width="250"/> <br/><br/>
 
 ## What I learned 
 
