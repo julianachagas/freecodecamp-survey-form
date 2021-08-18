@@ -10,6 +10,10 @@ Project created for the Responsive Web Design Certification from <a href="https:
 
 ### Mobile 📱
 
+<img style="margin-right: 30px" src="screenshots/mobile1.png" alt=""/> <img style="margin-right: 30px" src="screenshots/mobile2.png" alt=""/> <img src="screenshots/mobile3.png" alt=""/> <br/><br/>
+
+### Mobile 📱
+
 <img src="screenshots/mobile.png" alt=""/> <br/><br/>
 
 ## What I learned 
