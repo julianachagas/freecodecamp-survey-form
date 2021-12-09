@@ -23,15 +23,15 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1; 
-  background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.3), rgba(0, 0, 0, 0.4)), url(images/wimbledon-tennis-grass-court.jpg);
+  z-index: -1;     
+  background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.2), rgba(0, 0, 0, 0.9)), url(images/tennis-court.jpg);          
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: top center;   
 } 
 
 body {
-  padding-bottom: 3rem;
+  padding-bottom: 3rem;  
 }  
 
 .container {
@@ -184,7 +184,8 @@ textarea {
   border-radius: 10px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;  
+  transition: all 0.3s ease-in-out;
+  min-width: 30%;  
 }
 
 /* FOCUS STATE */ 
@@ -234,6 +235,8 @@ textarea {
   .description {
     font-size: 1rem;
     line-height: 1.3;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   #survey-form {
@@ -252,11 +255,7 @@ textarea {
     margin: 3rem auto 1.75rem;   
     font-size: 1.125rem; 
     width: 100%;    
-  } 
-  
-  body::before {
-    background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.3), rgba(0, 0, 0, 0.8)), url(images/wimbledon-tennis-grass-court.jpg); 
-  }
+  }  
 }
 
 @media (max-width: 500px) {
@@ -271,4 +270,10 @@ textarea {
   .radio-wrap:not(:last-child), .checkbox-wrap:not(:last-child) {
     margin-bottom: 1rem;
   }  
+}
+
+@media (max-width: 330px) {
+  .description {    
+    max-width: 100%;    
+  }
 }
