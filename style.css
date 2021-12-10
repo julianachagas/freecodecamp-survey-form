@@ -23,7 +23,8 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;     
+  z-index: -1; 
+  background-color: #000;    
   background-image: linear-gradient(0deg, rgba(20, 160, 62, 0.2), rgba(0, 0, 0, 0.9)), url(images/tennis-court.jpg);          
   background-size: cover;
   background-repeat: no-repeat;
