@@ -267,11 +267,7 @@ textarea {
   
   .radio-wrap, .checkbox-wrap {
     margin-right: 0;     
-  }
-
-  /* .radio-wrap:not(:last-child), .checkbox-wrap:not(:last-child) {
-    margin-bottom: 1rem;
-  } */  
+  }  
 }
 
 @media (max-width: 330px) {
