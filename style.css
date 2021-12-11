@@ -121,7 +121,7 @@ textarea {
   margin-right: 1.5rem;  
   position: relative;   
   display: flex;  
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 .radio-wrap label, .checkbox-wrap label {
@@ -140,7 +140,8 @@ textarea {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   background: var(--light-gray);  
   display: inline-block;
@@ -154,7 +155,8 @@ textarea {
   content: "";
   position: absolute;
   display: inline-block;  
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 5px;
   border: 5px solid var(--purple);
   border-radius: 50%;
@@ -164,13 +166,13 @@ textarea {
   content: "";
   position: absolute;
   display: inline-block;
-  top: 2px;
+  top: 50%;  
   left: 6px;
   width: 8px;
   height: 12px;
   border: solid var(--purple);
   border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+  transform: translateY(-65%) rotate(45deg);
 }
 
 /* FORM BUTTON */
