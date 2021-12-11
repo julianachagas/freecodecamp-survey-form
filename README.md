@@ -36,7 +36,8 @@ Project created for the Responsive Web Design Certification from <a href="https:
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   background: var(--light-gray);  
   display: inline-block;
@@ -50,7 +51,8 @@ Project created for the Responsive Web Design Certification from <a href="https:
   content: "";
   position: absolute;
   display: inline-block;  
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 5px;
   border: 5px solid var(--purple);
   border-radius: 50%;
@@ -60,13 +62,13 @@ Project created for the Responsive Web Design Certification from <a href="https:
   content: "";
   position: absolute;
   display: inline-block;
-  top: 2px;
+  top: 50%;  
   left: 6px;
   width: 8px;
   height: 12px;
   border: solid var(--purple);
   border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+  transform: translateY(-65%) rotate(45deg);
 }
 ```
 <br/>
